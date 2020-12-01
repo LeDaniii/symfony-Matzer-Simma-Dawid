@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello TravelController!{% endblock %}
+
+{% block body %}
+
+{% if travel %}
+{% for travel in travel %}
+{{ travel.destination }}
+{% endfor %}
+{% endif %}
+{% endblock %}
